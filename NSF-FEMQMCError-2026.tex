@@ -482,16 +482,20 @@ Theoretically Sound Adaptive Methods for Elliptic Partial Differential Equations
 	\centering
 \begin{tikzpicture}
 %\draw[help lines] grid (15,7);
-\node[bnd] (exist) at (2,6.5) {Existing};
+\node[bnd] (exist) at (2,6.5) {existing};
+\node[bnd, fill = lightyellow] (proposed) at (9.5,6) {proposed};
+\node[bnd, fill = lightorange] (in-progress) at (7,1) {in progress};
 \node[bnd] (apostest) at (2,5) {a posteriori error \textbf{estimates} for FEM for PDEs};
 \node[bnd] (uni) at (2,3) {a posteriori univariate function approximation error bounds \cite{ChoEtal17a}};
-\node[bnd] (qmc) at (2,1) {single level qMC cubature error bounds};
-\node[bnd,fill = lightyellow] (apostbd) at (7,4) {a posteriori error \textbf{bounds} for FEM for PDEs};
-\node[bnd,fill = lightorange] (qmcml) at (7,2) {multi-level qMC cubature error bounds};
-\node[bnd,fill = lightyellow] (apostrandbd) at (12,3) {a posteriori error \textbf{bounds} for PDEs with randomness};
+\node[bnd] (qmc) at (2,1) {a posteriori single level qMC cubature error bounds};
+\node[bnd,fill = lightyellow] (apostbd) at (7,4.5) {a posteriori error \textbf{bounds} for FEM for PDEs};
+\node[bnd,fill = lightorange] (qmcml) at (7,2.5) {a posteriori multi-level qMC cubature error bounds};
+\node[bnd,fill = lightyellow] (apostrandbd) at (12,3.5) {a posteriori error \textbf{bounds} for PDEs with randomness};
 \draw[->,ultra thick] (apostest.east) -- (apostbd.170);
 \draw[->,ultra thick] (uni.east) -- (apostbd.190);
 \draw[->,ultra thick] (qmc.east) -- (qmcml.west);
+\draw[->,ultra thick] (qmcml.east) -- (apostrandbd.190);
+\draw[->,ultra thick] (apostbd.east) -- (apostrandbd.170);
 \end{tikzpicture}
 \end{figure}
 
