@@ -1,0 +1,25 @@
+\def\Ignore#1{}\def\notesupp#1{}\providecommand{\HickernellFJ}{Hickernell\xspace}\def\Ignore#1{}\def\notesupp#1{}\providecommand{\HickernellFJ}{Hickernell\xspace}
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Choi et~al(2017)Choi, Ding, \HickernellFJ, and Tong}]{ChoEtal17a}
+Choi SCT, Ding Y, \HickernellFJ FJ, Tong X (2017) Local adaption for
+  approximation and minimization of univariate functions. J Complexity
+  40:17--33, \doi{10.1016/j.jco.2016.11.005}
+
+\bibitem[{\HickernellFJ et~al(2018)\HickernellFJ, {Jim\'enez Rugama}, and
+  Li}]{HicEtal17a}
+\HickernellFJ FJ, {Jim\'enez Rugama} {\relax Ll}A, Li D (2018) Adaptive
+  quasi-{M}onte {C}arlo methods for cubature. In: Dick J, Kuo FY,
+  Wo\'zniakowski H (eds) Contemporary Computational Mathematics --- a
+  celebration of the 80th birthday of {I}an {S}loan, Springer-Verlag, pp
+  597--619, \doi{10.1007/978-3-319-72456-0}
+
+\end{thebibliography}
