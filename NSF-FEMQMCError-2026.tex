@@ -435,13 +435,13 @@
 
 \tikzset{
 help lines /.append style ={dashed},
-bnd/.style ={draw = none,
+nd/.style ={draw = none,
 	text width = 3cm,
 	font = \small,
 	align = flush center,
 	fill = #1,
 	rounded corners},
-bnd/.default = lightblue
+nd/.default = lightblue
 }
 
 
@@ -483,15 +483,15 @@ Theoretically Sound Adaptive Methods for Elliptic Partial Differential Equations
 	\centering
 \begin{tikzpicture}[every path/.style={<-, ultra thick}]
 %\draw[help lines] grid (15,7);
-\node[bnd] (exist) at (2,6.5) {existing};
-\node[bnd = lightyellow] (proposed) at (9.5,6) {proposed};
-\node[bnd = lightorange] (in-progress) at (7,1) {in progress};
-\node[bnd] (qmc) at (2,1) {a posteriori error \textbf{bounds} for single level qMC cubature \cite{HicEtal17a}};
-\node[bnd] (uni) at (2,3) {a posteriori error \textbf{bounds} for univariate function approximation  \cite{ChoEtal17a}};
-\node[bnd] (apostest) at (2,5) {a posteriori FEM error \textbf{estimates} for deterministic PDEs};
-\node[bnd = lightorange] (qmcml) at (7,2.5) {a posteriori error \textbf{bounds} for multi-level qMC cubature} edge (qmc);
-\node[bnd = lightyellow] (apostbd) at (7,4.5) {a posteriori FEM error \textbf{bounds} for deterministic PDEs} edge (apostest) edge (uni);
-\node[bnd = lightyellow] (apostrandbd) at (12,3.5) {a posteriori error \textbf{bounds} for PDEs with \textbf{randomness}} edge (apostbd) edge (qmcml);
+\node[nd] (exist) at (2,6.5) {existing};
+\node[nd = lightyellow] (proposed) at (9.5,6) {proposed};
+\node[nd = lightorange] (in-progress) at (7,1) {in progress};
+\node[nd] (qmc) at (2,1) {a posteriori error \textbf{bounds} for single level qMC cubature \cite{HicEtal17a}};
+\node[nd] (uni) at (2,3) {a posteriori error \textbf{bounds} for univariate function approximation  \cite{ChoEtal17a}};
+\node[nd] (apostest) at (2,5) {a posteriori FEM error \textbf{estimates} for deterministic PDEs};
+\node[nd = lightorange] (qmcml) at (7,2.5) {a posteriori error \textbf{bounds} for multi-level qMC cubature} edge (qmc);
+\node[nd = lightyellow] (apostbd) at (7,4.5) {a posteriori FEM error \textbf{bounds} for deterministic PDEs} edge (apostest) edge (uni);
+\node[nd = lightyellow] (apostrandbd) at (12,3.5) {a posteriori error \textbf{bounds} for PDEs with \textbf{randomness}} edge (apostbd) edge (qmcml);
 \end{tikzpicture}
 \end{figure}
 
